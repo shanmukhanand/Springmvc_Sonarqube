@@ -9,25 +9,14 @@ import java.util.Scanner;
 
 @Controller
 public class HelloController {
-    String id; 
+
     public HelloController() {
         System.out.print("this is the hello controller you access on " + new Date());
     }
 
     @RequestMapping("/hello")
-    public ModelAndView mymethod() {
+    public ModelAndView helloMethod() {
         return new ModelAndView("hellopage", "msg", "Hello First Spring");
-    }
-
-    @RequestMapping("/hello1")
-    public ModelAndView mySecondMethod() {
-        return new ModelAndView("hello1page", "msg", getInfo());
-    }
-
-    public StringBuilder getInfo() {
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("hello im jaydip").append("and im too Smart hmmmmm");
-        return stringBuilder;
     }
 
 }
