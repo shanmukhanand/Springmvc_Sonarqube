@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 @Controller
 public class HelloController {
+    String id; 
     public HelloController() {
         System.out.print("this is the hello controller you access on " + new Date());
     }
