@@ -26,5 +26,12 @@ public class HelloController {
      public ModelAndView test1() {
         return new ModelAndView("hellopage", "msg", "Hello First Spring");
     }
+    
+     public ModelAndView test2() {
+        return new ModelAndView("hellopage", "msg", "Hello First Spring");
+    }
 
+     public ModelAndView test3() {
+        return new ModelAndView("hellopage", "msg", "Hello First Spring");
+    }
 }
