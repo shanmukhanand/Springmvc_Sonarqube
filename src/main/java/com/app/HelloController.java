@@ -16,6 +16,14 @@ public class HelloController {
 
     @RequestMapping("/hello")
     public ModelAndView helloMethod() {
+        return new ModelAndView("hellopage", "msg", "Hello Testing");
+    }
+    
+    public ModelAndView test() {
+        return new ModelAndView("hellopage", "msg", "Hello First Spring");
+    }
+    
+     public ModelAndView test1() {
         return new ModelAndView("hellopage", "msg", "Hello First Spring");
     }
 
